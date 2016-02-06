@@ -1,6 +1,6 @@
 module.exports = {
-	var request = require("request");
-	var executeRequest = function(method, url, data) {
+	executeRequest: function(method, url, data) {
+		var request = require("request");
 		var defer = protractor.promise.defer();
 
 		var requestOptions = {uri: url, method: method, json: true};
@@ -22,5 +22,5 @@ module.exports = {
 
 		// Return a promise so the caller can wait on it for the request to complete
 		return defer.promise;
-	};
+	}
 };
