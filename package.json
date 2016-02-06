@@ -1,0 +1,27 @@
+{
+	"name": "protractor-rest",
+	"description": "Protractor REST Unit Tests",
+	"version": "0.1.0",
+	"author": {
+		"name": "Dylan McDonald",
+		"email": "dylan@deepdivedylan.com",
+		"url": "https://www.deepdivedylan.com/"
+	},
+	"contributors": [
+		{
+			"name": "Skyler Rexroad",
+			"email": "skyrex1095@gmail.com",
+			"url": "http://www.skylerrexroad.com/"
+		}
+	],
+	"dependencies": {
+		"request": ">=2.69.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Skylarity/protractor-rest.git"
+	},
+	"preferGlobal": false,
+	"private": true,
+	"license": "Apache-2.0"
+}
