@@ -22,5 +22,15 @@ module.exports = {
 
 		// Return a promise so the caller can wait on it for the request to complete
 		return defer.promise;
+	},
+
+	waitForPromise: function(promiseFn, testFn) {
+		browser.wait(function () {
+			var deferred = protractor.promise.defer();
+			promiseFn().then(function (data) {
+				deferred.fulfill(testFn(data));
+			});
+			return deferred.promise;
+		});
 	}
 };
